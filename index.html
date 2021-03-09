@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Punto 1</title>
+	<link rel="stylesheet" type="text/css" href="estilo2.css">
+	<link rel="icon" type="img/png" href="icon.png">
+	<script>
+		var n=11;
+	</script>
+</head>
+<body style="font-family:Calibri Light; background-image: url('fondo3.jpg');font-size:18px;" onload="f()"><center>
+	<br><br>
+	<div id="inicio" style="background-color:#F652C2; width:250px; height:160px; font-size:40px;"> <br> Hola</div>
+	<script>
+		function entrar()
+		{
+			console.log(n)
+			n=n-1;
+			cuadro=document.getElementById('inicio');
+			cuadro.innerHTML=n;
+			if(n==0)
+			{
+				clearInterval(sky);
+				document.write("Terminé");
+			}
+		}
+		function f()
+		{
+			sky=setInterval(entrar,1000);
+		}
+	</script>
+
+	 <div class="punto3" id="punto3" ><a href="https://mandrea11.github.io/parte2paula/"><center><h1>ir al siguiente punto</h1></a></div>
+</center></body>
+</html>
